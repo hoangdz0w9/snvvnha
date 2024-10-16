@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Chúc Mừng Sinh Nhật!</h1>
+        <div class="message">
+            <p>Chúc bạn Diệp tuổi mới, nụ cười mãi nở trên môi, như ánh bình minh lan tỏa sắc hồng rực rỡ. Cuộc sống sẽ luôn êm đềm như dòng suối mát, mang theo niềm vui, hạnh phúc ngập tràn. Mỗi bước chân đi đều nhẹ nhàng, tựa gió thoảng, và mọi ước mơ sẽ hóa thành hiện thực, như những vì sao lấp lánh trên bầu trời đêm!</p>
+        </div>
+
+        <!-- Bánh sinh nhật -->
+        <div class="cake">
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="sprinkles"></div>
+            <div class="sprinkles"></div>
+            <div class="sprinkles"></div>
+            <div class="sprinkles"></div>
+            <!-- Kẹo trang trí -->
+            <div class="candy"></div>
+            <div class="candy"></div>
+            <div class="candy"></div>
+        </div>
+    </div>
+
+    <!-- Bóng bay với vị trí không dính vào thiệp -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+    <div class="balloon balloon6"></div>
+    <div class="balloon balloon7"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const name = prompt("Nhập tên của người nhận:", "Diệp") || "Diệp";
+            const greeting = document.querySelector("h1");
+            greeting.textContent = `Chúc Mừng Sinh Nhật, ${name}!`;
+        });
+    </script>
+</body>
+</html>
